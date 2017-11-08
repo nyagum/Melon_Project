@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.example.eunmin.melon"
+        applicationId "melon.project.com.melon_proj"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
