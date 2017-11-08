@@ -9,9 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SongDetailActivity" />
+        <activity android:name=".SearchSongActivity">
         <activity android:name=".activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -19,10 +26,7 @@
         <activity android:name=".activity.SongDetailActivity" />
         <activity android:name=".activity.SearchActivity"></activity>
 
-
-
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".SongDetailActivity"></activity>
+        </activity>
     </application>
 
 </manifest>
