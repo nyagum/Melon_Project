@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //noinspection SimplifiableIfStatement
         if (id == R.id.search) {
             //added by B
-            Intent intent=new Intent(MainActivity.this, SearchActivity.class);
+            Intent intent=new Intent(MainActivity.this, SearchSongActivity.class);
             startActivity(intent);
             return true;
         }

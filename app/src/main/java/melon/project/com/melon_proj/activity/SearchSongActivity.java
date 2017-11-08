@@ -1,4 +1,4 @@
-package melon.project.com.melon_proj;
+package melon.project.com.melon_proj.activity;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import melon.project.com.melon_proj.R;
 
 public class SearchSongActivity extends AppCompatActivity {
 

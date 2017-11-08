@@ -1,4 +1,4 @@
-package melon.project.com.melon_proj;
+package melon.project.com.melon_proj.activity;
 
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import melon.project.com.melon_proj.R;
 
 public class MusicPlayListActivity extends AppCompatActivity {
 
