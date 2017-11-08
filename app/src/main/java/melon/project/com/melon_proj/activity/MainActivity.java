@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import melon.project.com.melon_proj.R;
 import melon.project.com.melon_proj.adapter.ChartAdapter;
@@ -24,6 +25,8 @@ import melon.project.com.melon_proj.adapter.RecentMusicAdapter;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawer;
     private ImageButton imageButton4;
+    private TextView textView;
+    private TextView textView7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -128,5 +131,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
             }
         });
+        textView = findViewById(R.id.textView);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ChartListActivity.class);
+                startActivity(intent);
+            }
+        });
+        textView7 = findViewById(R.id.textView7);
+        textView7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ChartListActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
