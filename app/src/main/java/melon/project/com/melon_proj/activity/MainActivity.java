@@ -77,14 +77,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
+        Intent intent;
         switch (id) {
             //TODO Activity 전환
             case R.id.nav_home:
                 break;
             case R.id.nav_recenct:
+                intent = new Intent(MainActivity.this, ChartListActivity.class);
+                startActivity(intent);
                 break;
             case R.id.nav_chart:
+                intent = new Intent(MainActivity.this, ChartListActivity.class);
+                startActivity(intent);
                 break;
         }
 
