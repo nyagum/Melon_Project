@@ -21,6 +21,7 @@
         </activity>
         <activity android:name=".activity.SearchSongActivity" />
         <activity android:name=".activity.ChartListActivity"></activity>
+        <activity android:name=".activity.MusicPlayListActivity"/>
     </application>
 
 </manifest>

@@ -15,6 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 
 import melon.project.com.melon_proj.R;
 import melon.project.com.melon_proj.adapter.ChartAdapter;
@@ -22,6 +23,8 @@ import melon.project.com.melon_proj.adapter.RecentMusicAdapter;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawer;
+    private ImageButton imageButton4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         // Navigation View
-        NavigationView navigationView =findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         // 최신음악 RecyclerView
@@ -55,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         ChartAdapter cAdapter = new ChartAdapter();
         chart_recycler_view.setAdapter(cAdapter);
         chart_recycler_view.setLayoutManager(new LinearLayoutManager(this));
+        initView();
     }
 
     @Override
@@ -102,7 +106,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //noinspection SimplifiableIfStatement
         if (id == R.id.search) {
             //added by B
-            Intent intent=new Intent(MainActivity.this, SearchSongActivity.class);
+            Intent intent = new Intent(MainActivity.this, SearchSongActivity.class);
             startActivity(intent);
             return true;
         }
@@ -113,5 +117,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void songDetailPage(View view) {
         Intent intent = new Intent(MainActivity.this, SongDetailActivity.class);
         startActivity(intent);
+    }
+
+    private void initView() {
+        imageButton4 = findViewById(R.id.imageButton4);
+        imageButton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MusicPlayListActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
