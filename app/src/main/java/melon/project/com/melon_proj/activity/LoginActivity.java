@@ -1,4 +1,4 @@
-package melon.project.com.melon_proj;
+package melon.project.com.melon_proj.activity;
 
 
 import android.content.Intent;
@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import melon.project.com.melon_proj.R;
 import melon.project.com.melon_proj.customview.ClearEditText;
 
 public class LoginActivity extends AppCompatActivity {

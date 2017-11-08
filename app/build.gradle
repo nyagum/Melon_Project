@@ -29,4 +29,5 @@ dependencies {
 
     implementation 'de.hdodenhof:circleimageview:2.2.0'
     implementation 'me.tankery.lib:circularSeekBar:1.1.4'
+    implementation 'com.android.support:mediarouter-v7:26.1.0'
 }
