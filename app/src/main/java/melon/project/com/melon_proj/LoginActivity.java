@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
 
     // ============================================================ 로그인 처리
     public void signin(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 
